@@ -39,7 +39,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.hero__description__btn {
-  color: green;
-  cursor: pointer;
+.hero__description__download {
+  text-decoration: none;
+  color: #000;
 }

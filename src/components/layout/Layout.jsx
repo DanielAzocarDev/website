@@ -4,16 +4,32 @@ import { Navbar } from "../navbar/Navbar";
 
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 export const Layout = ({ children }) => {
   const actions = [
-    { icon: <LinkedInIcon />, name: "LinkedIn" },
-    { icon: <InstagramIcon />, name: "Instagram" },
-    { icon: <TwitterIcon />, name: "Twitter" },
-    { icon: <AlternateEmailIcon />, name: "Email" },
+    {
+      icon: <LinkedInIcon />,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/danielazocardev/",
+    },
+    {
+      icon: <TwitterIcon />,
+      name: "Twitter",
+      link: "https://twitter.com/danielazocardev",
+    },
+    {
+      icon: <GitHubIcon />,
+      name: "Github",
+      link: "https://github.com/DanielAzocarDev",
+    },
+    {
+      icon: <AlternateEmailIcon />,
+      name: "Email",
+      link: "mailto:danielazocarvelasquezdev@gmail.com",
+    },
   ];
 
   return (
@@ -31,6 +47,8 @@ export const Layout = ({ children }) => {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            href={action.link}
+            target="_blank"
           />
         ))}
       </SpeedDial>

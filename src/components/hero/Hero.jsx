@@ -23,7 +23,11 @@ export const Hero = () => {
           </p>
 
           <Tooltip title="download my Resume" arrow>
-            <IconButton color="primary">
+            <IconButton
+              color="primary"
+              href="src/assets/DanielAzocarResume.pdf"
+              download
+            >
               <DownloadForOfflineIcon fontSize="large" />
             </IconButton>
           </Tooltip>
