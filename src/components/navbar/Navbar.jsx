@@ -17,9 +17,9 @@ export const Navbar = () => {
             sx={{
               flexGrow: 1,
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "flex" },
               fontFamily: "monospace",
-              fontWeight: 700,
+              fontWeight: 100,
               letterSpacing: ".9rem",
               color: "inherit",
               textDecoration: "none",
