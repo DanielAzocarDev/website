@@ -28,7 +28,7 @@ export const Navbar = () => {
             Daniel
           </Typography>
           <IconButton sx={{ p: 0 }}>
-            <Avatar alt="Daniel Azocar" src="src/assets/profile.jpg" />
+            <Avatar alt="Daniel Azocar" src="/assets/profile.jpg" />
           </IconButton>
         </Toolbar>
       </AppBar>
