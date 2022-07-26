@@ -25,7 +25,7 @@ export const Hero = () => {
           <Tooltip title="download my Resume" arrow>
             <IconButton
               color="primary"
-              href="src/assets/DanielAzocarResume.pdf"
+              href="/assets/DanielAzocarResume.pdf"
               download
             >
               <DownloadForOfflineIcon fontSize="large" />
